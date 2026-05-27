@@ -71,7 +71,8 @@ const pages = [
   { id:'p07', title:'Снимаем штанишки', src:'assets/page-07-state-a.png', alt:'assets/page-07-state-b.png', action:{onText:'Снять штанишки', offText:'Вернуть штанишки', icon:'🩳', onDone:'Штанишки сняты!', offDone:'Штанишки вернулись!', x:50, y:88} },
   { id:'p08', title:'Смотрим в горшочек', src:'assets/page-08-state-a.png', alt:'assets/page-08-state-b.png', action:{onText:'Открыть', offText:'Закрыть', icon:'🪄', onDone:'Открыли!', offDone:'Закрыли!', x:50, y:88} },
   { id:'p09', title:'Угадай, что нужно для ручек', src:'assets/page-09-state-a.png', alt:'assets/page-09-state-b.png', action:{onText:'Открыть', offText:'Закрыть', icon:'🎁', onDone:'Открыли!', offDone:'Закрыли!', x:50, y:88} },
-  { id:'p10', title:'Финал', src:'assets/page-10.png' }
+  { id:'p10', title:'Финал', src:'assets/page-10.png' },
+  { id:'back-cover', title:'Задняя обложка', src:'assets/back-cover.png', kind:'cover' }
 ];
 const allImages=[...new Set(pages.flatMap(p=>[p.src,p.alt].filter(Boolean)))];
 const state={index:0,toggled:{},sound:true,auto:null,flipping:false};
